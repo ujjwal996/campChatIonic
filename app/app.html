@@ -1,0 +1,17 @@
+<ion-menu [content] = "content">
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="openPage(homePage)"><ion-icon name="ion-chatbubbles"></ion-icon>
+         Chat
+      </button>
+      <button ion-item (click)="openPage(aboutPage)"><ion-icon name="ion-asterisk"></ion-icon>
+         About
+      </button>
+      <button ion-item (click)="logout()"><ion-icon name = "ion-log-out"></ion-icon>
+         Logout
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #content [root]="rootPage"></ion-nav>
